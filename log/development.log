@@ -1,0 +1,2622 @@
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (235.3ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (248.8ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateApologies (20110603085537)
+  [4;36;1mSQL (97.0ms)[0m   [0;1mCREATE TABLE `apologies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (33.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110603085537')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `apologies`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `apologies`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mApology Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateApologies (20110603085537)
+  [4;35;1mSQL (66.6ms)[0m   [0mDROP TABLE `apologies`[0m
+  [4;36;1mSQL (55.5ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20110603085537'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateApologies (20110603085537)
+  [4;36;1mSQL (156.2ms)[0m   [0;1mCREATE TABLE `apologies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `text` varchar(255), `type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (45.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110603085537')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `apologies`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `apologies`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mApology Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.3ms)[0m   [0mINSERT INTO `apologies` (`created_at`, `updated_at`, `text`, `type`) VALUES('2011-06-03 09:02:25', '2011-06-03 09:02:25', 'en el wc', NULL)[0m
+  [4;36;1mSQL (55.0ms)[0m   [0;1mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`created_at`, `updated_at`, `text`, `type`) VALUES('2011-06-03 09:02:26', '2011-06-03 09:02:26', 'en el banco', NULL)[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`created_at`, `updated_at`, `text`, `type`) VALUES('2011-06-03 09:02:26', '2011-06-03 09:02:26', 'en casa', NULL)[0m
+  [4;36;1mSQL (31.8ms)[0m   [0;1mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`created_at`, `updated_at`, `text`, `type`) VALUES('2011-06-03 09:02:26', '2011-06-03 09:02:26', 'sacando al perro', NULL)[0m
+  [4;35;1mSQL (31.9ms)[0m   [0mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.1ms)[0m   [0mINSERT INTO `apologies` (`created_at`, `updated_at`, `text`, `type`) VALUES('2011-06-03 09:02:26', '2011-06-03 09:02:26', 'a las 9', NULL)[0m
+  [4;36;1mSQL (43.3ms)[0m   [0;1mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`created_at`, `updated_at`, `text`, `type`) VALUES('2011-06-03 09:02:26', '2011-06-03 09:02:26', 'mañana', NULL)[0m
+  [4;35;1mSQL (43.0ms)[0m   [0mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`created_at`, `updated_at`, `text`, `type`) VALUES('2011-06-03 09:02:26', '2011-06-03 09:02:26', 'algun dia', NULL)[0m
+  [4;36;1mSQL (42.7ms)[0m   [0;1mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.3ms)[0m   [0;1mINSERT INTO `apologies` (`created_at`, `updated_at`, `text`, `type`) VALUES('2011-06-03 09:02:26', '2011-06-03 09:02:26', 'jabber', NULL)[0m
+  [4;35;1mSQL (42.5ms)[0m   [0mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`created_at`, `updated_at`, `text`, `type`) VALUES('2011-06-03 09:02:26', '2011-06-03 09:02:26', 'mail', NULL)[0m
+  [4;36;1mSQL (42.7ms)[0m   [0;1mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`created_at`, `updated_at`, `text`, `type`) VALUES('2011-06-03 09:02:26', '2011-06-03 09:02:26', 'tuenti', NULL)[0m
+  [4;35;1mSQL (42.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mApology Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.5ms)[0m   [0mSELECT * FROM `apologies` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mApology Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.4ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`type` = 'place') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateApologies (20110603085537)
+  [4;35;1mSQL (39.6ms)[0m   [0mDROP TABLE `apologies`[0m
+  [4;36;1mSQL (67.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20110603085537'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateApologies (20110603085537)
+  [4;36;1mSQL (166.3ms)[0m   [0;1mCREATE TABLE `apologies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `text` varchar(255), `ap_type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (55.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110603085537')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `apologies`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `apologies`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mApology Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.3ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES(NULL, '2011-06-03 09:04:46', '2011-06-03 09:04:46', 'en el wc')[0m
+  [4;36;1mSQL (49.5ms)[0m   [0;1mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES(NULL, '2011-06-03 09:04:46', '2011-06-03 09:04:46', 'en el banco')[0m
+  [4;35;1mSQL (43.2ms)[0m   [0mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES(NULL, '2011-06-03 09:04:46', '2011-06-03 09:04:46', 'en casa')[0m
+  [4;36;1mSQL (42.8ms)[0m   [0;1mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.3ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES(NULL, '2011-06-03 09:04:46', '2011-06-03 09:04:46', 'sacando al perro')[0m
+  [4;35;1mSQL (42.1ms)[0m   [0mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES(NULL, '2011-06-03 09:04:46', '2011-06-03 09:04:46', 'a las 9')[0m
+  [4;36;1mSQL (32.1ms)[0m   [0;1mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES(NULL, '2011-06-03 09:04:46', '2011-06-03 09:04:46', 'mañana')[0m
+  [4;35;1mSQL (31.6ms)[0m   [0mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.3ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES(NULL, '2011-06-03 09:04:46', '2011-06-03 09:04:46', 'algun dia')[0m
+  [4;36;1mSQL (30.7ms)[0m   [0;1mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES(NULL, '2011-06-03 09:04:46', '2011-06-03 09:04:46', 'jabber')[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES(NULL, '2011-06-03 09:04:46', '2011-06-03 09:04:46', 'mail')[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES(NULL, '2011-06-03 09:04:46', '2011-06-03 09:04:46', 'tuenti')[0m
+  [4;35;1mSQL (31.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mApology Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (1.0ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` IS NULL) [0m
+  [4;35;1mApology Load (0.6ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mApology Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.3ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:05:27', '2011-06-03 09:05:27', 'en el wc')[0m
+  [4;36;1mSQL (49.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:05:27', '2011-06-03 09:05:27', 'en el banco')[0m
+  [4;35;1mSQL (42.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:05:27', '2011-06-03 09:05:27', 'en casa')[0m
+  [4;36;1mSQL (43.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:05:27', '2011-06-03 09:05:27', 'sacando al perro')[0m
+  [4;35;1mSQL (42.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.3ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:05:27', '2011-06-03 09:05:27', 'a las 9')[0m
+  [4;36;1mSQL (41.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:05:27', '2011-06-03 09:05:27', 'mañana')[0m
+  [4;35;1mSQL (43.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:05:27', '2011-06-03 09:05:27', 'algun dia')[0m
+  [4;36;1mSQL (65.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:05:27', '2011-06-03 09:05:27', 'jabber')[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:05:27', '2011-06-03 09:05:27', 'mail')[0m
+  [4;36;1mSQL (31.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:05:27', '2011-06-03 09:05:27', 'tuenti')[0m
+  [4;35;1mSQL (31.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mApology Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (1.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (107.5ms)[0m   [0;1mCREATE TABLE `apologies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `text` varchar(255), `ap_type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (100.4ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (193.7ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (43.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110603085537')[0m
+  [4;35;1mApology Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.3ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:08:12', '2011-06-03 09:08:12', 'en el wc')[0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:08:12', '2011-06-03 09:08:12', 'en el banco')[0m
+  [4;35;1mSQL (42.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:08:12', '2011-06-03 09:08:12', 'en casa')[0m
+  [4;36;1mSQL (43.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:08:12', '2011-06-03 09:08:12', 'sacando al perro')[0m
+  [4;35;1mSQL (43.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:08:12', '2011-06-03 09:08:12', 'a las 9')[0m
+  [4;36;1mSQL (43.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:08:12', '2011-06-03 09:08:12', 'mañana')[0m
+  [4;35;1mSQL (43.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:08:12', '2011-06-03 09:08:12', 'algun dia')[0m
+  [4;36;1mSQL (43.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:08:12', '2011-06-03 09:08:12', 'al jabber')[0m
+  [4;35;1mSQL (42.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:08:12', '2011-06-03 09:08:12', 'en el mail')[0m
+  [4;36;1mSQL (31.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:08:12', '2011-06-03 09:08:12', 'en el chat de tuenti')[0m
+  [4;35;1mSQL (31.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mApology Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:08:17', '2011-06-03 09:08:17', 'en el wc')[0m
+  [4;36;1mSQL (42.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.3ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:08:17', '2011-06-03 09:08:17', 'en el banco')[0m
+  [4;35;1mSQL (30.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.1ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:08:18', '2011-06-03 09:08:18', 'en casa')[0m
+  [4;36;1mSQL (31.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:08:18', '2011-06-03 09:08:18', 'sacando al perro')[0m
+  [4;35;1mSQL (31.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:08:18', '2011-06-03 09:08:18', 'a las 9')[0m
+  [4;36;1mSQL (32.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:08:18', '2011-06-03 09:08:18', 'mañana')[0m
+  [4;35;1mSQL (32.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:08:18', '2011-06-03 09:08:18', 'algun dia')[0m
+  [4;36;1mSQL (31.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:08:18', '2011-06-03 09:08:18', 'al jabber')[0m
+  [4;35;1mSQL (42.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.3ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:08:18', '2011-06-03 09:08:18', 'en el mail')[0m
+  [4;36;1mSQL (42.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:08:18', '2011-06-03 09:08:18', 'en el chat de tuenti')[0m
+  [4;35;1mSQL (42.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:09:35) [GET]
+  [4;35;1mApology Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.4ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.2ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+
+ActionView::MissingTemplate (Missing template apologies/index.erb in view path app/views):
+  /usr/lib/ruby/1.8/action_view/paths.rb:66:in `find_template'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1389:in `default_template'
+  /usr/lib/ruby/1.8/action_controller/base.rb:905:in `render_without_benchmark'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:51:in `render'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:51:in `render'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1326:in `default_render'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1332:in `perform_action_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/1.8/action_controller/flash.rb:146:in `perform_action'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/chunked.rb:15:in `call'
+  /usr/lib/ruby/1.8/rack/handler/mongrel.rb:67:in `process'
+  /usr/lib/ruby/1.8/rack/handler/mongrel.rb:38:in `run'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:10:06) [GET]
+  [4;36;1mApology Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 167ms (View: 161, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:10:07) [GET]
+  [4;35;1mApology Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.3ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:10:15) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:10:24) [GET]
+  [4;35;1mApology Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:10:27) [GET]
+  [4;36;1mApology Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:10:27) [GET]
+  [4;35;1mApology Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:10:28) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:10:28) [GET]
+  [4;35;1mApology Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:10:30) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:11:15) [GET]
+  [4;35;1mApology Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:11:16) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:11:17) [GET]
+  [4;35;1mApology Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.8ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:11:17) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.3ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:11:17) [GET]
+  [4;35;1mApology Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:11:23) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.3ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:11:25) [GET]
+  [4;35;1mApology Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 127.0.0.1 at 2011-06-03 11:11:27) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:29:54) [GET]
+  [4;35;1mApology Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 90ms (View: 53, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:29:55) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:29:55) [GET]
+  [4;35;1mApology Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:29:55) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:29:55) [GET]
+  [4;35;1mApology Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:29:56) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:16) [GET]
+  [4;35;1mApology Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:17) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:25) [GET]
+  [4;35;1mApology Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:26) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:27) [GET]
+  [4;35;1mApology Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:28) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:29) [GET]
+  [4;35;1mApology Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:29) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:29) [GET]
+  [4;35;1mApology Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:30) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:30) [GET]
+  [4;35;1mApology Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:30) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:30) [GET]
+  [4;35;1mApology Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 14ms (View: 1, DB: 2) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:31) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:44) [GET]
+  [4;35;1mApology Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 9ms (View: 1, DB: 3) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:45) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 68ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:46) [GET]
+  [4;35;1mApology Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:47) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:47) [GET]
+  [4;35;1mApology Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:48) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:48) [GET]
+  [4;35;1mApology Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:49) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:49) [GET]
+  [4;35;1mApology Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:49) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:50) [GET]
+  [4;35;1mApology Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 9ms (View: 1, DB: 3) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:31:50) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:33:34) [GET]
+  [4;35;1mApology Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:35:02) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 74ms (View: 66, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:35:03) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:35:26) [GET]
+  [4;36;1mApology Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.4ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 15ms (View: 5, DB: 2) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:35:28) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:35:28) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:35:28) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:35:28) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:35:29) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:35:29) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:35:29) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:35:30) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mApology Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:35:44', '2011-06-03 09:35:44', 'en el wc')[0m
+  [4;36;1mSQL (56.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:35:44', '2011-06-03 09:35:44', 'en el banco')[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:35:45', '2011-06-03 09:35:45', 'en casa')[0m
+  [4;36;1mSQL (31.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.3ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:35:45', '2011-06-03 09:35:45', 'sacando al perro')[0m
+  [4;35;1mSQL (41.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.3ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:35:45', '2011-06-03 09:35:45', 'a las 9')[0m
+  [4;36;1mSQL (42.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:35:45', '2011-06-03 09:35:45', 'mañana')[0m
+  [4;35;1mSQL (43.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:35:45', '2011-06-03 09:35:45', 'algun dia')[0m
+  [4;36;1mSQL (43.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:35:45', '2011-06-03 09:35:45', 'al jabber')[0m
+  [4;35;1mSQL (43.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.3ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:35:45', '2011-06-03 09:35:45', 'en el mail')[0m
+  [4;36;1mSQL (42.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.1ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:35:45', '2011-06-03 09:35:45', 'en el chat de tuenti')[0m
+  [4;35;1mSQL (42.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('sign', '2011-06-03 09:35:45', '2011-06-03 09:35:45', 'Enviado desde mi bb')[0m
+  [4;36;1mSQL (43.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('sign', '2011-06-03 09:35:45', '2011-06-03 09:35:45', 'Enviado desde mi tam-tam')[0m
+  [4;35;1mSQL (42.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('sign', '2011-06-03 09:35:45', '2011-06-03 09:35:45', 'Enviado... o no')[0m
+  [4;36;1mSQL (43.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:35:47) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.4ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.3ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.2ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 73ms (View: 1, DB: 2) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:35:47) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:35:48) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:19) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:23) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:24) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:25) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (1.4ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 9ms (View: 1, DB: 2) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:25) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:26) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:26) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:26) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:27) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 70ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:27) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:28) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:28) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:29) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:29) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:30) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (1.5ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 3) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:30) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:30) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:53) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:54) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:56) [GET]
+  [4;36;1mApology Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.2ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 78ms (View: 1, DB: 2) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:57) [GET]
+  [4;36;1mApology Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.2ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 17ms (View: 1, DB: 2) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:58) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:58) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:36:58) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:37:47) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+
+ActionView::MissingTemplate (Missing template admin/apologies/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:38:13) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.6ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 2) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:38:13) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:38:14) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:38:14) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:38:15) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:38:15) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:38:16) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:38:16) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:40:56) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+Rendering admin/apologies/index
+ERROR: compiling _run_erb_app47views47admin47apologies47index46html46erb RAISED compile error
+/home/mmarin/Work/app.ologize/app/views/admin/apologies/index.html.erb:6: syntax error, unexpected kENSURE, expecting kEND
+/home/mmarin/Work/app.ologize/app/views/admin/apologies/index.html.erb:8: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47admin47apologies47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  form_tag admin_apologies_path do |f| ; @output_buffer.concat "\nEstoy\n"
+
+; @output_buffer.concat " text_field_tag 'ap1'>\n\n"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/mmarin/Work/app.ologize/app/views/admin/apologies/index.html.erb:8:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:265:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1252:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1328:in `default_render'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/session/cookie_store.rb:99:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.11/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:38:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.11/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/home/mmarin/Work/app.ologize/app/views/admin/apologies/index.html.erb:6: syntax error, unexpected kENSURE, expecting kEND
+/home/mmarin/Work/app.ologize/app/views/admin/apologies/index.html.erb:8: syntax error, unexpected $end, expecting kEND) on line #6 of app/views/admin/apologies/index.html.erb:
+3: <%= text_field_tag 'ap1'>
+
+    app/views/admin/apologies/index.html.erb:8:in `compile!'
+
+Rendered rescues/_trace (37.9ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:41:06) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+Rendering admin/apologies/index
+ERROR: compiling _run_erb_app47views47admin47apologies47index46html46erb RAISED compile error
+/home/mmarin/Work/app.ologize/app/views/admin/apologies/index.html.erb:9: syntax error, unexpected kENSURE, expecting kEND
+/home/mmarin/Work/app.ologize/app/views/admin/apologies/index.html.erb:11: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47admin47apologies47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  form_tag admin_apologies_path do |f| ; @output_buffer.concat "\nEstoy\n"
+
+; @output_buffer.concat " text_field_tag 'ap1'>.\nLlegare\n<%= text_field_tag 'ap2'>.\n<%end>\n\n"
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/mmarin/Work/app.ologize/app/views/admin/apologies/index.html.erb:11:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:265:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1252:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1328:in `default_render'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/session/cookie_store.rb:99:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.11/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:38:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.11/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/home/mmarin/Work/app.ologize/app/views/admin/apologies/index.html.erb:9: syntax error, unexpected kENSURE, expecting kEND
+/home/mmarin/Work/app.ologize/app/views/admin/apologies/index.html.erb:11: syntax error, unexpected $end, expecting kEND) on line #9 of app/views/admin/apologies/index.html.erb:
+6: <%end>
+
+    app/views/admin/apologies/index.html.erb:11:in `compile!'
+
+Rendered rescues/_trace (140.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:41:20) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+Rendering admin/apologies/index
+ERROR: compiling _run_erb_app47views47admin47apologies47index46html46erb RAISED compile error
+/home/mmarin/Work/app.ologize/app/views/admin/apologies/index.html.erb:9: syntax error, unexpected kENSURE, expecting kEND
+/home/mmarin/Work/app.ologize/app/views/admin/apologies/index.html.erb:11: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47admin47apologies47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  form_tag admin_apologies_path do |f| ; @output_buffer.concat "\nEstoy\n"
+
+; @output_buffer.concat(( text_field_tag 'ap1' ).to_s); @output_buffer.concat ".\nLlegare\n"
+
+; @output_buffer.concat(( text_field_tag 'ap2').to_s); @output_buffer.concat ".\n"
+; @output_buffer.concat "end>\n\n"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/mmarin/Work/app.ologize/app/views/admin/apologies/index.html.erb:11:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:265:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1252:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1328:in `default_render'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/session/cookie_store.rb:99:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.11/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/var/lib/gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:38:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.11/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/home/mmarin/Work/app.ologize/app/views/admin/apologies/index.html.erb:9: syntax error, unexpected kENSURE, expecting kEND
+/home/mmarin/Work/app.ologize/app/views/admin/apologies/index.html.erb:11: syntax error, unexpected $end, expecting kEND) on line #9 of app/views/admin/apologies/index.html.erb:
+6: <%end>
+
+    app/views/admin/apologies/index.html.erb:11:in `compile!'
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:41:29) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+Rendering admin/apologies/index
+
+ActionView::TemplateError (undefined local variable or method `admin_apologies_path' for #<ActionView::Base:0xb6f02f38>) on line #1 of app/views/admin/apologies/index.html.erb:
+1: <% form_tag admin_apologies_path do |f| %>
+2: Estoy
+3: <%= text_field_tag 'ap1' %>.
+4: Llegare
+
+    app/views/admin/apologies/index.html.erb:1
+
+Rendered rescues/_trace (37.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:41:47) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+Rendering admin/apologies/index
+Completed in 44ms (View: 39, DB: 1) | 200 OK [http://192.168.1.136/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:41:53) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:42:57) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:43:00) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+Rendering admin/apologies/index
+
+ActionView::TemplateError (undefined method `submig_tag' for #<ActionView::Base:0xb6f6b434>) on line #10 of app/views/admin/apologies/index.html.erb:
+7: <%= text_field_tag 'ap3'%>.
+8: <br/>-----<br/>
+9: <%= text_field_tag 'ap4'%>.
+10: <%= submig_tag "Guardar" %>
+11: <% end %>
+
+    app/views/admin/apologies/index.html.erb:10
+    app/views/admin/apologies/index.html.erb:1
+
+Rendered rescues/_trace (42.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:43:06) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+Rendering admin/apologies/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://192.168.1.136/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:43:15) [GET]
+  [4;36;1mApology Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+Rendering admin/apologies/index
+Completed in 26ms (View: 7, DB: 1) | 200 OK [http://192.168.1.136/admin]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#create (for 192.168.1.136 at 2011-06-03 11:43:32) [POST]
+  Parameters: {"commit"=>"Guardar", "ap1"=>"place", "ap2"=>"asf", "authenticity_token"=>"p16v4qvMsd3zRF8Z9QRxZeg3YrTXCUfexSmx6sf7AuU=", "ap3"=>"eeeee", "ap4"=>"asfasf"}
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.3ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES(NULL, '2011-06-03 09:43:32', '2011-06-03 09:43:32', NULL)[0m
+  [4;35;1mSQL (45.7ms)[0m   [0mCOMMIT[0m
+
+NameError (undefined local variable or method `admin_path' for #<Admin::ApologiesController:0xb702ebc8>):
+  app/controllers/admin/apologies_controller.rb:9:in `create'
+
+Rendered rescues/_trace (32.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#create (for 192.168.1.136 at 2011-06-03 11:44:03) [POST]
+  Parameters: {"commit"=>"Guardar", "ap1"=>"place", "ap2"=>"asf", "authenticity_token"=>"p16v4qvMsd3zRF8Z9QRxZeg3YrTXCUfexSmx6sf7AuU=", "ap3"=>"eeeee", "ap4"=>"asfasf"}
+Redirected to http://192.168.1.136/admin/apologies
+Completed in 86466ms (DB: 0) | 302 Found [http://192.168.1.136/admin/apologies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:45:30) [GET]
+Rendering admin/apologies/index
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://192.168.1.136/admin/apologies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#create (for 192.168.1.136 at 2011-06-03 11:46:02) [POST]
+  Parameters: {"commit"=>"Guardar", "ap1"=>"de resaca", "ap2"=>"cuando la muerte nos separe", "authenticity_token"=>"p16v4qvMsd3zRF8Z9QRxZeg3YrTXCUfexSmx6sf7AuU=", "ap3"=>"en el bar", "ap4"=>"Enviado desde el bar"}
+  [4;35;1mApology Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:46:02', '2011-06-03 09:46:02', 'de resaca')[0m
+  [4;36;1mSQL (41.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:46:02', '2011-06-03 09:46:02', 'cuando la muerte nos separe')[0m
+  [4;35;1mSQL (41.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:46:02', '2011-06-03 09:46:02', 'en el bar')[0m
+  [4;36;1mSQL (41.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('sign', '2011-06-03 09:46:02', '2011-06-03 09:46:02', 'Enviado desde el bar')[0m
+  [4;35;1mSQL (42.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.1.136/admin/apologies
+Completed in 187ms (DB: 169) | 302 Found [http://192.168.1.136/admin/apologies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:46:02) [GET]
+Rendering admin/apologies/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://192.168.1.136/admin/apologies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:46:23) [GET]
+Rendering admin/apologies/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://192.168.1.136/admin/apologies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:46:24) [GET]
+Rendering admin/apologies/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://192.168.1.136/admin/apologies]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:46:34) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.4ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.2ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 26ms (View: 10, DB: 2) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:46:36) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:46:36) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.3ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:46:39) [GET]
+Rendering admin/apologies/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://192.168.1.136/admin]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:46:46) [GET]
+  [4;35;1mApology Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#create (for 192.168.1.50 at 2011-06-03 11:47:22) [POST]
+  Parameters: {"commit"=>"Guardar", "ap1"=>"en el callista", "ap2"=>"a lo largo de la mañana", "authenticity_token"=>"8PkUgx6rOLN80BqLCxEzY1CKFg2cfnL4UXQbx/yYQu4=", "ap3"=>"en el twitter", "ap4"=>"Enviado telepáticamente"}
+  [4;35;1mApology Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.3ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:47:22', '2011-06-03 09:47:22', 'en el callista')[0m
+  [4;36;1mSQL (40.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:47:22', '2011-06-03 09:47:22', 'a lo largo de la mañana')[0m
+  [4;35;1mSQL (42.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:47:22', '2011-06-03 09:47:22', 'en el twitter')[0m
+  [4;36;1mSQL (53.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('sign', '2011-06-03 09:47:22', '2011-06-03 09:47:22', 'Enviado telepáticamente')[0m
+  [4;35;1mSQL (41.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.1.136/admin
+Completed in 196ms (DB: 180) | 302 Found [http://192.168.1.136/admin/apologies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:47:23) [GET]
+Rendering admin/apologies/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://192.168.1.136/admin]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:47:25) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.4ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.3ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.2ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 2) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:47:25) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:47:26) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:47:27) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:47:27) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:47:28) [GET]
+  [4;36;1mApology Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:47:28) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:47:29) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:47:41) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 14ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.136 at 2011-06-03 11:47:52) [GET]
+Rendering admin/apologies/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.136/admin]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:48:01) [GET]
+Rendering admin/apologies/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.136/admin]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#create (for 192.168.1.50 at 2011-06-03 11:48:45) [POST]
+  Parameters: {"commit"=>"Guardar", "ap1"=>"renovando el DNI", "ap2"=>"cuando llegue", "authenticity_token"=>"8PkUgx6rOLN80BqLCxEzY1CKFg2cfnL4UXQbx/yYQu4=", "ap3"=>"", "ap4"=>"Emergay Consultory"}
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.3ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:48:45', '2011-06-03 09:48:45', 'renovando el DNI')[0m
+  [4;35;1mSQL (40.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:48:45', '2011-06-03 09:48:45', 'cuando llegue')[0m
+  [4;36;1mSQL (31.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:48:45', '2011-06-03 09:48:45', '')[0m
+  [4;35;1mSQL (30.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('sign', '2011-06-03 09:48:45', '2011-06-03 09:48:45', 'Emergay Consultory')[0m
+  [4;36;1mSQL (30.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://192.168.1.136/admin
+Completed in 151ms (DB: 134) | 302 Found [http://192.168.1.136/admin/apologies]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:48:45) [GET]
+Rendering admin/apologies/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://192.168.1.136/admin]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:48:48) [GET]
+Rendering admin/apologies/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.136/admin]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:48:51) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.3ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.2ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 2) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:48:52) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 12ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:48:54) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:48:56) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#create (for 192.168.1.50 at 2011-06-03 11:49:26) [POST]
+  Parameters: {"commit"=>"Guardar", "ap1"=>"denunciando que me robaron el móvil", "ap2"=>"mañana", "authenticity_token"=>"8PkUgx6rOLN80BqLCxEzY1CKFg2cfnL4UXQbx/yYQu4=", "ap3"=>"en el móvil y en el correo", "ap4"=>"Enviado desde el móvil"}
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:49:26', '2011-06-03 09:49:26', 'denunciando que me robaron el móvil')[0m
+  [4;35;1mSQL (35.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:49:26', '2011-06-03 09:49:26', 'mañana')[0m
+  [4;36;1mSQL (42.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:49:26', '2011-06-03 09:49:26', 'en el móvil y en el correo')[0m
+  [4;35;1mSQL (42.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.1ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('sign', '2011-06-03 09:49:26', '2011-06-03 09:49:26', 'Enviado desde el móvil')[0m
+  [4;36;1mSQL (42.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://192.168.1.136/admin
+Completed in 180ms (DB: 165) | 302 Found [http://192.168.1.136/admin/apologies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:49:26) [GET]
+Rendering admin/apologies/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://192.168.1.136/admin]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#create (for 192.168.1.50 at 2011-06-03 11:49:50) [POST]
+  Parameters: {"commit"=>"Guardar", "ap1"=>"atrapado en el ascensor", "ap2"=>"", "authenticity_token"=>"8PkUgx6rOLN80BqLCxEzY1CKFg2cfnL4UXQbx/yYQu4=", "ap3"=>"", "ap4"=>""}
+  [4;35;1mApology Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:49:50', '2011-06-03 09:49:50', 'atrapado en el ascensor')[0m
+  [4;36;1mSQL (74.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:49:50', '2011-06-03 09:49:50', '')[0m
+  [4;35;1mSQL (42.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:49:50', '2011-06-03 09:49:50', '')[0m
+  [4;36;1mSQL (41.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('sign', '2011-06-03 09:49:50', '2011-06-03 09:49:50', '')[0m
+  [4;35;1mSQL (41.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.1.136/admin
+Completed in 217ms (DB: 202) | 302 Found [http://192.168.1.136/admin/apologies]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:49:51) [GET]
+Rendering admin/apologies/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://192.168.1.136/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:49:53) [GET]
+  [4;36;1mApology Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.4ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.6ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.3ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 21ms (View: 1, DB: 3) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:49:54) [GET]
+  [4;36;1mApology Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:49:54) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:49:56) [GET]
+  [4;36;1mApology Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (32.0ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.4ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 54ms (View: 1, DB: 35) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:49:56) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 21ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:49:57) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:49:58) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:49:58) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:49:59) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:50:00) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:50:00) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 76ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:50:01) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:50:03) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:50:03) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#create (for 192.168.1.50 at 2011-06-03 11:51:09) [POST]
+  Parameters: {"commit"=>"Guardar", "ap1"=>"indispuesto", "ap2"=>"cuando me toque jubilarme", "authenticity_token"=>"8PkUgx6rOLN80BqLCxEzY1CKFg2cfnL4UXQbx/yYQu4=", "ap3"=>"a grito pelao", "ap4"=>"Enviado desde mi flamante móvil superchachiguay mejor que el tuyo seguro"}
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.3ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:51:09', '2011-06-03 09:51:09', 'indispuesto')[0m
+  [4;35;1mSQL (43.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:51:09', '2011-06-03 09:51:09', 'cuando me toque jubilarme')[0m
+  [4;36;1mSQL (42.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:51:09', '2011-06-03 09:51:09', 'a grito pelao')[0m
+  [4;35;1mSQL (42.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('sign', '2011-06-03 09:51:09', '2011-06-03 09:51:09', 'Enviado desde mi flamante móvil superchachiguay mejor que el tuyo seguro')[0m
+  [4;36;1mSQL (41.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://192.168.1.136/admin
+Completed in 189ms (DB: 173) | 302 Found [http://192.168.1.136/admin/apologies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:51:09) [GET]
+Rendering admin/apologies/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.136/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:51:11) [GET]
+  [4;35;1mApology Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.4ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.3ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.3ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;35;1mApology Load (0.3ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 2) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:51:13) [GET]
+  [4;35;1mApology Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#create (for 192.168.1.50 at 2011-06-03 11:51:46) [POST]
+  Parameters: {"commit"=>"Guardar", "ap1"=>"de resaca", "ap2"=>"en algún momento indeterminado entre ahora y el fin del mundo", "authenticity_token"=>"8PkUgx6rOLN80BqLCxEzY1CKFg2cfnL4UXQbx/yYQu4=", "ap3"=>"en mi casa", "ap4"=>"Enviado con el móvil de otro"}
+  [4;35;1mApology Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:51:46', '2011-06-03 09:51:46', 'de resaca')[0m
+  [4;36;1mSQL (60.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.3ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:51:46', '2011-06-03 09:51:46', 'en algún momento indeterminado entre ahora y el fin del mundo')[0m
+  [4;35;1mSQL (31.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:51:46', '2011-06-03 09:51:46', 'en mi casa')[0m
+  [4;36;1mSQL (31.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('sign', '2011-06-03 09:51:46', '2011-06-03 09:51:46', 'Enviado con el móvil de otro')[0m
+  [4;35;1mSQL (31.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.1.136/admin
+Completed in 171ms (DB: 156) | 302 Found [http://192.168.1.136/admin/apologies]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:51:46) [GET]
+Rendering admin/apologies/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://192.168.1.136/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:51:48) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.5ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.3ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.3ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 2) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:51:49) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:51:52) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:51:55) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:51:57) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:51:59) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#create (for 192.168.1.50 at 2011-06-03 11:52:40) [POST]
+  Parameters: {"commit"=>"Guardar", "ap1"=>"de bronca con la parienta", "ap2"=>"en cinco minutos", "authenticity_token"=>"8PkUgx6rOLN80BqLCxEzY1CKFg2cfnL4UXQbx/yYQu4=", "ap3"=>"a ratos", "ap4"=>"Enviado desde mi BackPerry"}
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.3ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:52:40', '2011-06-03 09:52:40', 'de bronca con la parienta')[0m
+  [4;35;1mSQL (41.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:52:40', '2011-06-03 09:52:40', 'en cinco minutos')[0m
+  [4;36;1mSQL (42.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:52:40', '2011-06-03 09:52:40', 'a ratos')[0m
+  [4;35;1mSQL (42.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('sign', '2011-06-03 09:52:40', '2011-06-03 09:52:40', 'Enviado desde mi BackPerry')[0m
+  [4;36;1mSQL (42.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://192.168.1.136/admin
+Completed in 185ms (DB: 171) | 302 Found [http://192.168.1.136/admin/apologies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:52:40) [GET]
+Rendering admin/apologies/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.136/admin]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#create (for 192.168.1.50 at 2011-06-03 11:53:26) [POST]
+  Parameters: {"commit"=>"Guardar", "ap1"=>"en una entrevista de trabajo de la competencia", "ap2"=>"sudado", "authenticity_token"=>"8PkUgx6rOLN80BqLCxEzY1CKFg2cfnL4UXQbx/yYQu4=", "ap3"=>"por 300€ la hora", "ap4"=>"¿Qué estás mirando?"}
+  [4;35;1mApology Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `apologies`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('place', '2011-06-03 09:53:26', '2011-06-03 09:53:26', 'en una entrevista de trabajo de la competencia')[0m
+  [4;36;1mSQL (46.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('time', '2011-06-03 09:53:26', '2011-06-03 09:53:26', 'sudado')[0m
+  [4;35;1mSQL (31.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApology Create (0.2ms)[0m   [0mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('disp', '2011-06-03 09:53:26', '2011-06-03 09:53:26', 'por 300€ la hora')[0m
+  [4;36;1mSQL (42.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mApology Create (0.2ms)[0m   [0;1mINSERT INTO `apologies` (`ap_type`, `created_at`, `updated_at`, `text`) VALUES('sign', '2011-06-03 09:53:26', '2011-06-03 09:53:26', '¿Qué estás mirando?')[0m
+  [4;35;1mSQL (42.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.1.136/admin
+Completed in 179ms (DB: 165) | 302 Found [http://192.168.1.136/admin/apologies]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:53:26) [GET]
+Rendering admin/apologies/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://192.168.1.136/admin]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:53:34) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.4ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.3ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.3ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 2) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:53:35) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (11.4ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 77ms (View: 1, DB: 12) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:53:36) [GET]
+  [4;36;1mApology Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 12ms (View: 1, DB: 2) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:53:37) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:53:39) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:53:43) [GET]
+  [4;36;1mApology Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:53:45) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:53:55) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:54:27) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:54:28) [GET]
+  [4;36;1mApology Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.2ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApologiesController#index (for 192.168.1.50 at 2011-06-03 11:54:29) [GET]
+  [4;36;1mApology Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `apologies`[0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'place') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'time') [0m
+  [4;35;1mApology Load (0.1ms)[0m   [0mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'disp') [0m
+  [4;36;1mApology Load (0.1ms)[0m   [0;1mSELECT * FROM `apologies` WHERE (`apologies`.`ap_type` = 'sign') [0m
+Rendering apologies/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://192.168.1.136/]

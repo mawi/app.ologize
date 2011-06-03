@@ -1,0 +1,17 @@
+development:
+  adapter: mysql
+  database: appologize
+  username: root
+  socket: /var/run/mysqld/mysqld.sock
+
+test:
+  adapter: mysql
+  database: appologize_test
+  username: root
+  socket: /var/run/mysqld/mysqld.sock
+
+production:
+  adapter: mysql
+  database: appologize_production
+  username: root
+  socket: /var/run/mysqld/mysqld.sock
